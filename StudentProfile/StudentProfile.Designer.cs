@@ -30,12 +30,13 @@
         {
             lblStudProf = new Label();
             btnShow = new Button();
+            lblContactNum = new Label();
             SuspendLayout();
             // 
             // lblStudProf
             // 
             lblStudProf.AutoSize = true;
-            lblStudProf.Location = new Point(285, 110);
+            lblStudProf.Location = new Point(292, 111);
             lblStudProf.Name = "lblStudProf";
             lblStudProf.Size = new Size(161, 15);
             lblStudProf.TabIndex = 0;
@@ -51,11 +52,21 @@
             btnShow.UseVisualStyleBackColor = true;
             btnShow.Click += btnShow_Click;
             // 
+            // lblContactNum
+            // 
+            lblContactNum.AutoSize = true;
+            lblContactNum.Location = new Point(285, 136);
+            lblContactNum.Name = "lblContactNum";
+            lblContactNum.Size = new Size(168, 15);
+            lblContactNum.TabIndex = 2;
+            lblContactNum.Text = "Contact Number: 09171234567";
+            // 
             // StudentProfile
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblContactNum);
             Controls.Add(btnShow);
             Controls.Add(lblStudProf);
             Name = "StudentProfile";
@@ -68,5 +79,6 @@
 
         private Label lblStudProf;
         private Button btnShow;
+        private Label lblContactNum;
     }
 }
